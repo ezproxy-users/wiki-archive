@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>SSO with ColdFusion - EZProxyWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.0rc5" />
+<link rel="shortcut icon" href="https://pluto.potsdam.edu/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://pluto.potsdam.edu/ezproxywiki/opensearch_desc.php" title="EZProxyWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://pluto.potsdam.edu/ezproxywiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="EZProxyWiki Atom feed" href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="../load.php%3Fdebug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*.css" />
+<!--[if IE 6]><link rel="stylesheet" href="/ezproxywiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/ezproxywiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: ezpwikidb:resourceloader:filter:minify-css:7:bd176711d87effdb3a6ff09c19734297 */</style>
+
+<script src="../load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SSO_with_ColdFusion","wgTitle":"SSO with ColdFusion","wgCurRevisionId":2004,"wgArticleId":1554,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Code"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SSO_with_ColdFusion","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: ezpwikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-SSO_with_ColdFusion skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">SSO with ColdFusion</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From EZProxyWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="SSO_with_ColdFusion.html#column-one">navigation</a>, <a href="SSO_with_ColdFusion.html#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="SSO_with_ColdFusion.html#Using_SSO_Functionality_with_ColdFusion"><span class="tocnumber">1</span> <span class="toctext">Using SSO Functionality with ColdFusion</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="SSO_with_ColdFusion.html#Prerequisites"><span class="tocnumber">2</span> <span class="toctext">Prerequisites</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="SSO_with_ColdFusion.html#Perl"><span class="tocnumber">2.1</span> <span class="toctext">Perl</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="SSO_with_ColdFusion.html#Modify_the_default_Perl_scripts"><span class="tocnumber">3</span> <span class="toctext">Modify the default Perl scripts</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="SSO_with_ColdFusion.html#ssotest.cgi"><span class="tocnumber">3.1</span> <span class="toctext">ssotest.cgi</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="SSO_with_ColdFusion.html#CFML_Files"><span class="tocnumber">4</span> <span class="toctext">CFML Files</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="SSO_with_ColdFusion.html#EZproxy_Configuration"><span class="tocnumber">5</span> <span class="toctext">EZproxy Configuration</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="SSO_with_ColdFusion.html#SSO_with_other_scripting_languages"><span class="tocnumber">6</span> <span class="toctext">SSO with other scripting languages</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Using_SSO_Functionality_with_ColdFusion"> Using SSO Functionality with ColdFusion </span></h2>
+<p>Single sign-on (SSO) functionality was added to EZproxy in version 4.0b (2006-08-18) allowing for the secure transfer of user authentication information to other systems. 
+</p><p>There are currently no native ColdFusion scripts written to use this functionality. The following shows how to achieve this using Perl - requiring slight modifications to the <a rel="nofollow" class="external text" href="http://www.usefulutilities.com/support/usr/sso/perlsso.tar">perl</a> scripts written by Chris.
+</p>
+<h2> <span class="mw-headline" id="Prerequisites"> Prerequisites </span></h2>
+<h3> <span class="mw-headline" id="Perl"> Perl </span></h3>
+<p>You need to have Perl/CGI set up to work with your web server.
+</p><p>For Windows Server 2003 &amp; IIS I followed the guide at <a rel="nofollow" class="external free" href="http://www.visualwin.com/Perl/">http://www.visualwin.com/Perl/</a>
+</p><p>The following packages then need to be added to your ActivePerl installation (<a rel="nofollow" class="external text" href="http://cpan.uwinnipeg.ca/PPMPackages/10xx/">Download &amp; Install Instructions</a>):
+</p>
+<ul><li> CGI/Session
+</li><li> Crypt/CBC
+</li><li> Crypt/DES
+</li><li> Crypt/DES_EDE3
+</li></ul>
+<h2> <span class="mw-headline" id="Modify_the_default_Perl_scripts"> Modify the default Perl scripts </span></h2>
+<ul><li> To make the perl scripts work you need to replace "#!/usr/bin/perl -T" with "#!C:\Perl\bin\perl.exe"
+</li><li> Put the perl files into the cgi-bin directory
+</li></ul>
+<h3> <span class="mw-headline" id="ssotest.cgi"> ssotest.cgi </span></h3>
+<ul><li> line  6: <code>require '/var/www/cgi-bin/SSO.pm';</code>&#160;: change the path to SSO.pm 
+</li><li> line 12: <code>my $key = "abcdefghijklmnopqrstuvwx";</code>&#160;: change the key to match your ezproxy.cfg config entry
+</li><li> line 32: replace blank line with <code>print "Content-type: text/html\n\n";</code>
+</li><li> line 34: change <code>print "Location: <a rel="nofollow" class="external free" href="http://ezproxy.yourlib.org/sso/perl\n\n">http://ezproxy.yourlib.org/sso/perl\n\n</a>";</code> to <code>print "";</code>
+<ul><li> If the user is not logged in your CF code will do the redirection
+</li></ul>
+</li><li> line 38: delete this line (already sent this header on line 32)
+</li><li> line 40: replace <code>print "Hello user *** $user ***\n";</code> with <code>print $user;</code>
+</li></ul>
+<p>After this - my file ended up looking like
+</p>
+<pre>
+#!C:\Perl\bin\perl.exe
+
+use strict;
+use CGI;
+use CGI::Session;
+require &quot;ezproxySSO.pm&quot;;
+
+# This key value must match to the same one in ezproxy.cfg
+# The following demo assumes that ezproxy.cfg contains
+# SSO -URL=http://gw.usefulutilties.com/cgi-bin/ssotest.cgi -Secret=abcdefghijklmnopqrstuvwx perl
+# The key value must always be exactly 24 characters
+my $key = &quot;godihopethisworksprobnot&quot;;
+
+my $q = new CGI;
+
+my $sid = $q-&gt;cookie(&quot;CGISESSID&quot;) || undef;
+my $session = new CGI::Session(undef, $sid, {Directory=&gt;'/tmp'});
+
+if ($sid ne $session-&gt;id) {
+  print &quot;Set-Cookie: &quot;, $q-&gt;cookie(CGISESSID =&gt; $session-&gt;id), &quot;\n&quot;;
+}
+
+if ($q-&gt;param(&quot;sso&quot;) ne &quot;&quot; &amp;&amp; $q-&gt;param(&quot;ts&quot;) ne &quot;&quot;) {
+  my $sso = new EZproxy::SSO;
+  $sso-&gt;decode($q-&gt;param(&quot;sso&quot;), $q-&gt;param(&quot;ts&quot;), $key);
+  if ($sso-&gt;user() ne &quot;&quot; &amp;&amp; $sso-&gt;expired() == 0) {
+    $session-&gt;param(&quot;user&quot;, $sso-&gt;user());
+  }
+}
+
+my $user = $session-&gt;param(&quot;user&quot;);
+print &quot;Content-type: text/html\n\n&quot;;
+
+if ($user eq &quot;&quot;) {
+  print &quot;&quot;;
+  exit();
+}
+
+print $user;
+</pre>
+<h2> <span class="mw-headline" id="CFML_Files"> CFML Files </span></h2>
+<p>In this simple example there are 2 CFML files in the same directory: index.cfm &amp; login.cfm. you will need to change <code>my.ezproxy.edu.au</code> to your ezproxy server name &amp; <code>my.coldfusion.web.site</code> to your web site in login.cfm.
+</p><p><b>index.cfm</b>
+</p>
+<pre>
+&lt;cfif isdefined('session.username')&gt;
+  &lt;cfoutput&gt;
+		&lt;h1&gt;The user is logged in as #session.username#&lt;/h1&gt;
+		&lt;h2&gt;The Query String is: #cgi.QUERY_STRING#&lt;/h2&gt;
+	&lt;/cfoutput&gt;
+&lt;cfelse&gt;
+  &lt;cfinclude template=&quot;login.cfm&quot;&gt;
+&lt;/cfif&gt;
+</pre>
+<p><b>login.cfm</b>
+</p>
+<pre>
+&lt;cfif cgi.SERVER_PORT_SECURE eq 1&gt;
+  &lt;cfset prot = &quot;https://&quot;&gt;
+&lt;cfelse&gt;
+  &lt;cfset prot = &quot;http://&quot;&gt;
+&lt;/cfif&gt;
+
+&lt;cfset cx = URLEncodedFormat('#prot##cgi.HTTP_HOST#:#cgi.SERVER_PORT##cgi.SCRIPT_NAME#?#cgi.QUERY_STRING#')&gt;
+&lt;cfset ssoURL = &quot;http://my.ezproxy.edu.au/sso/CFLogin?context=#cx#&quot;&gt;
+&lt;cfset loginResponse = ''&gt;
+
+&lt;cfset mQS = ''&gt;
+&lt;cfif isdefined('url.SSO')&gt;
+  &lt;cfset mQS = '?#cgi.QUERY_STRING#'&gt;
+	
+	&lt;cfhttp method=&quot;Get&quot;
+		url='http://my.coldfusion.web.site/cgi-bin/ssotest.cgi#mQS#'
+		resolveurl=&quot;Yes&quot;&gt;
+	&lt;/cfhttp&gt;
+
+	&lt;cfset loginResponse = trim(#cfhttp.filecontent#)&gt;
+&lt;cfelse&gt;
+  &lt;cfset session.origContext = #cx#&gt;
+	&lt;cflocation url=&quot;#ssoURL#&quot; addtoken=&quot;no&quot;&gt;
+	&lt;cfabort&gt;
+&lt;/cfif&gt;
+
+&lt;cfset session.ssoUser = &quot;&quot;&gt;
+
+&lt;cfif loginResponse EQ &quot;&quot;&gt;
+  &lt;!--- no response - so not logged in ---&gt;
+	&lt;cflocation url=&quot;#ssoURL#&quot; addtoken=&quot;no&quot;&gt;
+&lt;cfelse&gt;
+  &lt;!--- 
+  ***** got a response - so logged in! 
+   ---&gt;
+	&lt;cfset session.username = &quot;#loginResponse#&quot;&gt;
+	&lt;cfset origURL = URLDecode(&quot;#session.origContext#&quot;)&gt;
+	&lt;cflocation url=&quot;#origURL#&quot; addtoken=&quot;No&quot;&gt;
+&lt;/cfif&gt;
+</pre>
+<h2> <span class="mw-headline" id="EZproxy_Configuration"> EZproxy Configuration </span></h2>
+<p>All that is left to do now is configure EZproxy to allow this SSO.
+</p><p>ezproxy.cfg
+</p>
+<pre>
+T Test CF SSO
+SSO -Secret=godihopethisworksprobnot -URL=http://my.coldfusion.web.site/login.cfm CFLogin
+</pre>
+<p>Now restart EZproxy and test it out at <a rel="nofollow" class="external free" href="http://my.coldfusion.web.site/index.cfm">http://my.coldfusion.web.site/index.cfm</a>
+</p>
+<h2> <span class="mw-headline" id="SSO_with_other_scripting_languages">SSO with other scripting languages</span></h2>
+<ul><li> <a href="SSO_with_PHP.html" title="SSO with PHP">SSO with PHP</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 67/1000000
+Preprocessor generated node count: 116/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key ezpwikidb:pcache:idhash:1554-0!*!0!!en!*!* and timestamp 20150624201131 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=SSO_with_ColdFusion&amp;oldid=2004">https://pluto.potsdam.edu/ezproxywiki/index.php?title=SSO_with_ColdFusion&amp;oldid=2004</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special:Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category:Code.html" title="Category:Code">Code</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="SSO_with_ColdFusion.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Talk:SSO_with_ColdFusion&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=SSO_with_ColdFusion&amp;action=edit" primary="1" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=SSO_with_ColdFusion&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-createaccount"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:UserLogin&amp;returnto=SSO+with+ColdFusion&amp;type=signup">Create account</a></li>
+				<li id="pt-login"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:UserLogin&amp;returnto=SSO+with+ColdFusion" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="Main_Page.html" style="background-image: url(https://pluto.potsdam.edu/var/www/html/common/dot_trans.gif);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="EZProxyWiki:Community_portal.html" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="EZProxyWiki:Current_events.html" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="Special:RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="Special:Random.html" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="Help:Contents.html" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="https://pluto.potsdam.edu/ezproxywiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search EZProxyWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special:WhatLinksHere/SSO_with_ColdFusion.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special:RecentChangesLinked/SSO_with_ColdFusion.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=SSO_with_ColdFusion&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+				<li id="t-permalink"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=SSO_with_ColdFusion&amp;oldid=2004" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=SSO_with_ColdFusion&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="https://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 10 October 2008, at 01:44.</li>
+		<li id="viewcount">This page has been accessed 5,387 times.</li>
+		<li id="privacy"><a href="EZProxyWiki:Privacy_policy.html" title="EZProxyWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="EZProxyWiki:About.html" title="EZProxyWiki:About">About EZProxyWiki</a></li>
+		<li id="disclaimer"><a href="EZProxyWiki:General_disclaimer.html" title="EZProxyWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<!-- Served in 0.220 secs. --></body></html>

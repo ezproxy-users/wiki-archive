@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>EZproxy with SRC in AIX - EZProxyWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.0rc5" />
+<link rel="shortcut icon" href="https://pluto.potsdam.edu/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://pluto.potsdam.edu/ezproxywiki/opensearch_desc.php" title="EZProxyWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://pluto.potsdam.edu/ezproxywiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="EZProxyWiki Atom feed" href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="../load.php%3Fdebug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*.css" />
+<!--[if IE 6]><link rel="stylesheet" href="/ezproxywiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/ezproxywiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: ezpwikidb:resourceloader:filter:minify-css:7:bd176711d87effdb3a6ff09c19734297 */</style>
+
+<script src="../load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"EZproxy_with_SRC_in_AIX","wgTitle":"EZproxy with SRC in AIX","wgCurRevisionId":2238,"wgArticleId":1376,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Code","Documentation"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"EZproxy_with_SRC_in_AIX","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: ezpwikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-EZproxy_with_SRC_in_AIX skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">EZproxy with SRC in AIX</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From EZProxyWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="EZproxy_with_SRC_in_AIX.html#column-one">navigation</a>, <a href="EZproxy_with_SRC_in_AIX.html#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><ul><li> Submitted: February 13, 2002
+</li><li> Submitted by: <a rel="nofollow" class="external text" href="mailto:maestro@milton.mlb.ilstu.edu">Chuck Geigner</a>, <a rel="nofollow" class="external text" href="http://www.ilstu.edu/">Illinois State University</a>, <a rel="nofollow" class="external text" href="http://www.mlb.ilstu.edu/">Milner Library</a>
+</li></ul>
+<p>This document about System Resource Controller (SRC) was made as a result of my own trial-and-error. The
+results have not yet been fully analyzed, and as such can not be
+regarded as conclusive evidence that srcmstr will run EZproxy
+effectively on your RS6K. It certainly looks that way though. Feel free
+to share your experiences with me if you feel that they would be a good
+addition to this howto.
+-CTG
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="EZproxy_with_SRC_in_AIX.html#How_to"><span class="tocnumber">1</span> <span class="toctext">How to</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="EZproxy_with_SRC_in_AIX.html#Define_a_restricted_access_user_and_group"><span class="tocnumber">1.1</span> <span class="toctext">Define a restricted access user and group</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="EZproxy_with_SRC_in_AIX.html#Define_the_.22ezproxy.22_subsystem_and_the_.22proxy.22_group_used_by_SRC"><span class="tocnumber">1.2</span> <span class="toctext">Define the "ezproxy" subsystem and the "proxy" group used by SRC</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="EZproxy_with_SRC_in_AIX.html#Change_ownership_of_ezproxy_programs_and_files_to_your_new_restricted_user"><span class="tocnumber">1.3</span> <span class="toctext">Change ownership of ezproxy programs and files to your new restricted user</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="EZproxy_with_SRC_in_AIX.html#Start_the_ezproxy_subsystem"><span class="tocnumber">1.4</span> <span class="toctext">Start the ezproxy subsystem</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="EZproxy_with_SRC_in_AIX.html#Edit_.2Fetc.2Frc.tcpip.2C_adding"><span class="tocnumber">1.5</span> <span class="toctext">Edit /etc/rc.tcpip, adding</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="EZproxy_with_SRC_in_AIX.html#Test"><span class="tocnumber">1.6</span> <span class="toctext">Test</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="EZproxy_with_SRC_in_AIX.html#Possible_errors"><span class="tocnumber">2</span> <span class="toctext">Possible errors</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="EZproxy_with_SRC_in_AIX.html#SRC_.22refresh.22_errors_out"><span class="tocnumber">2.1</span> <span class="toctext">SRC "refresh" errors out</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="EZproxy_with_SRC_in_AIX.html#Subsystem_will_not_start"><span class="tocnumber">2.2</span> <span class="toctext">Subsystem will not start</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="EZproxy_with_SRC_in_AIX.html#Subsystem_says_it_starts.2C_but_it_really_doesn.27t"><span class="tocnumber">2.3</span> <span class="toctext">Subsystem says it starts, but it really doesn't</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="EZproxy_with_SRC_in_AIX.html#Invalid_UID"><span class="tocnumber">2.4</span> <span class="toctext">Invalid UID</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="EZproxy_with_SRC_in_AIX.html#More_info"><span class="tocnumber">3</span> <span class="toctext">More info</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="EZproxy_with_SRC_in_AIX.html#Author"><span class="tocnumber">4</span> <span class="toctext">Author</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="How_to">How to</span></h3>
+<h4> <span class="mw-headline" id="Define_a_restricted_access_user_and_group">Define a restricted access user and group</span></h4>
+<p>Define a restricted access user and group to assign daemon and SRC
+rights to the ezproxy subsystem (to be created in next step). [NOTE:
+The EZproxy directions suggest that you assign EZproxy ownership to
+"nobody;" But in this case, SRC will not recognize the "nobody" UID of
+429496729, hence the creation of another restricted user. I chose to
+give this user a UID of 9999. Adjust UID if you already have a user
+with UID 9999.]
+</p>
+<pre>
+# mkgroup -A nobody2
+# mkuser id='9999' pgrp='nobody2' home='/usr/local/proxy'
+shell='/bin/noshell' gecos='Proxy Dummy' login='false' rlogin='false'
+nobody2
+</pre>
+<h4> <span class="mw-headline" id="Define_the_.22ezproxy.22_subsystem_and_the_.22proxy.22_group_used_by_SRC">Define the "ezproxy" subsystem and the "proxy" group used by SRC</span></h4>
+<pre>
+# mkssys -s ezproxy -p /usr/local/proxy/ezproxy -u 9999 -o
+/usr/local/proxy/proxy.iolog -S -n 15 -f 9 -G proxy
+0513-071 The ezproxy Subsystem has been added.
+</pre>
+<ul><li> -p explicit path of the executable (/usr/local/proxy/ezproxy)
+</li><li> -u UID of subsystem owner
+</li><li> -o explicit path of the file that stdout will be redirected to
+</li><li> -S Communication method: Signals
+</li><li> -f Signal to use on forced shutdown (SIGKILL)
+</li><li> -n Signal to use on normal shutdown (SIGTERM)
+</li><li> -G Group to which the ezproxy subsystem will belong (named mine "proxy")
+</li></ul>
+<pre>
+# lssrc -s ezproxy
+Subsystem Group PID Status
+ezproxy proxy inoperative
+</pre>
+<h4> <span class="mw-headline" id="Change_ownership_of_ezproxy_programs_and_files_to_your_new_restricted_user">Change ownership of ezproxy programs and files to your new restricted user</span></h4>
+<pre>
+# chown -R nobody2 /usr/local/proxy*
+</pre>
+<h4> <span class="mw-headline" id="Start_the_ezproxy_subsystem">Start the ezproxy subsystem</span></h4>
+<pre>
+# startsrc -s ezproxy
+0513-059 The ezproxy Subsystem has been started. Subsystem PID is 4296.
+# ps -ef
+UID PID PPID C STIME TTY TIME CMD
+root 1 0 0 Oct 19 - 13:07 /etc/init
+root 2440 1 0 Oct 19 - 0:00 /usr/sbin/srcmstr
+root 3622 2440 0 Oct 19 - 0:00 /usr/sbin/inetd
+root 3906 2440 0 Oct 19 - 0:24 /usr/sbin/syslogd
+nobody2 4296 2440 2 12:52:44 - 0:02 /usr/local/proxy/ezproxy
+</pre>
+<h4> <span class="mw-headline" id="Edit_.2Fetc.2Frc.tcpip.2C_adding">Edit /etc/rc.tcpip, adding</span></h4>
+<pre>
+# Start EZProxy
+start /usr/local/proxy/ezproxy &quot;$src_running&quot;
+</pre>
+<p>This will ensure that EZproxy starts automagically every time you boot your
+machine.
+</p>
+<h4> <span class="mw-headline" id="Test">Test</span></h4>
+<p>Test it. Test more. Test vigorously.
+</p>
+<h3> <span class="mw-headline" id="Possible_errors">Possible errors</span></h3>
+<h4> <span class="mw-headline" id="SRC_.22refresh.22_errors_out">SRC "refresh" errors out</span></h4>
+<pre>
+# refresh -s ezproxy
+0513-005 The Subsystem, ezproxy, only supports signal communication.
+</pre>
+<p>This is normal. Use "stopsrc -s ezproxy; startsrc -s ezproxy" instead.
+</p>
+<h4> <span class="mw-headline" id="Subsystem_will_not_start">Subsystem will not start</span></h4>
+<pre>
+# startsrc -s ezproxy
+0513-015 The ezproxy Subsystem could not be started.
+Please check subsystem resources and try again later.
+</pre>
+<p>This means that one of your subsystem definitions is more than likely
+erroneous (EVEN THOUGH IT PROBABLY "LET" YOU MAKE THE BAD CHANGE).
+Redefine subsystem correctly using chssys.
+</p>
+<h4> <span class="mw-headline" id="Subsystem_says_it_starts.2C_but_it_really_doesn.27t">Subsystem says it starts, but it really doesn't</span></h4>
+<pre>
+# sudo startsrc -s ezproxy
+0513-059 The ezproxy Subsystem has been started. Subsystem PID is 7018.
+# ps -ef
+UID PID PPID C STIME TTY TIME CMD
+root 1 0 0 Oct 19 - 10:26 /etc/init
+root 2440 1 0 Oct 19 - 0:00 /usr/sbin/srcmstr
+root 7022 8984 8 12:44:12 pts/1 0:00 ps -ef
+</pre>
+<p>Use the "errpt -a" and "alog -o -f '/var/adm/ras/conslog'" commands to
+view any software error details. Check configuration.
+</p>
+<h4> <span class="mw-headline" id="Invalid_UID">Invalid UID</span></h4>
+<pre>
+# startsrc -s ezproxy
+0513-012 The ezproxy Subsystem could not be started.
+The Subsystem's user id could not be established.
+Please check the Subsystem's user id and try again.
+</pre>
+<p>The UID you assigned as the owner of the subsystem is not recognized by
+SRC. This most commonly happens when using the AIX UID for "nobody"
+(4294967294). This number is out-of-bounds; You can fix this by
+creating another restricted user and reassigning subsystem ownership
+to it (be sure to reassign ownership of subsystem's files as well).
+</p>
+<pre>
+# mkgroup -A nobody2
+# mkuser id='9999' pgrp='nobody2' home='/usr/local/proxy'
+shell='/bin/noshell' gecos='Proxy Dummy' login='false' rlogin='false'
+nobody2
+# chssys -s ezproxy -u 9999
+</pre>
+<h3> <span class="mw-headline" id="More_info">More info</span></h3>
+<ul><li> man chssys
+</li><li> man mkssys
+</li><li> <a rel="nofollow" class="external free" href="http://publibn.boulder.ibm.com/doc_link/en_US/a_doc_lib/cmds/aixcmds3/mkssys.htm">http://publibn.boulder.ibm.com/doc_link/en_US/a_doc_lib/cmds/aixcmds3/mkssys.htm</a>
+</li><li> man lssrc
+</li><li> man startsrc
+</li><li> man rc.tcpip
+</li><li> man fg
+</li><li> man bg
+</li></ul>
+<h3> <span class="mw-headline" id="Author">Author</span></h3>
+<p>Chuck Geigner, AIX SysOp, Milner Library - 12 Feb 2002
+&lt;maestro@milton.mlb.ilstu.edu&gt;
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 154/1000000
+Preprocessor generated node count: 280/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key ezpwikidb:pcache:idhash:1376-0!*!*!!en!*!* and timestamp 20150624090210 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=EZproxy_with_SRC_in_AIX&amp;oldid=2238">https://pluto.potsdam.edu/ezproxywiki/index.php?title=EZproxy_with_SRC_in_AIX&amp;oldid=2238</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special:Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category:Code.html" title="Category:Code">Code</a></li><li><a href="Category:Documentation.html" title="Category:Documentation">Documentation</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="EZproxy_with_SRC_in_AIX.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Talk:EZproxy_with_SRC_in_AIX&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=EZproxy_with_SRC_in_AIX&amp;action=edit" primary="1" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=EZproxy_with_SRC_in_AIX&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-createaccount"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:UserLogin&amp;returnto=EZproxy+with+SRC+in+AIX&amp;type=signup">Create account</a></li>
+				<li id="pt-login"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:UserLogin&amp;returnto=EZproxy+with+SRC+in+AIX" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="Main_Page.html" style="background-image: url(https://pluto.potsdam.edu/var/www/html/common/dot_trans.gif);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="EZProxyWiki:Community_portal.html" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="EZProxyWiki:Current_events.html" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="Special:RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="Special:Random.html" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="Help:Contents.html" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="https://pluto.potsdam.edu/ezproxywiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search EZProxyWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special:WhatLinksHere/EZproxy_with_SRC_in_AIX.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special:RecentChangesLinked/EZproxy_with_SRC_in_AIX.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=EZproxy_with_SRC_in_AIX&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+				<li id="t-permalink"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=EZproxy_with_SRC_in_AIX&amp;oldid=2238" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=EZproxy_with_SRC_in_AIX&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="https://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 14 January 2009, at 20:32.</li>
+		<li id="viewcount">This page has been accessed 10,969 times.</li>
+		<li id="privacy"><a href="EZProxyWiki:Privacy_policy.html" title="EZProxyWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="EZProxyWiki:About.html" title="EZProxyWiki:About">About EZProxyWiki</a></li>
+		<li id="disclaimer"><a href="EZProxyWiki:General_disclaimer.html" title="EZProxyWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<!-- Served in 0.163 secs. --></body></html>

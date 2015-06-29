@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Securing Linux in a Nutshell - EZProxyWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.0rc5" />
+<link rel="shortcut icon" href="https://pluto.potsdam.edu/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://pluto.potsdam.edu/ezproxywiki/opensearch_desc.php" title="EZProxyWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://pluto.potsdam.edu/ezproxywiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="EZProxyWiki Atom feed" href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="../load.php%3Fdebug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*.css" />
+<!--[if IE 6]><link rel="stylesheet" href="/ezproxywiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/ezproxywiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: ezpwikidb:resourceloader:filter:minify-css:7:bd176711d87effdb3a6ff09c19734297 */</style>
+
+<script src="../load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Securing_Linux_in_a_Nutshell","wgTitle":"Securing Linux in a Nutshell","wgCurRevisionId":1934,"wgArticleId":1377,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Documentation"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Securing_Linux_in_a_Nutshell","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: ezpwikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Securing_Linux_in_a_Nutshell skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Securing Linux in a Nutshell</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From EZProxyWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="Securing_Linux_in_a_Nutshell.html#column-one">navigation</a>, <a href="Securing_Linux_in_a_Nutshell.html#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><ul><li> Submitted: April 25, 2001
+</li><li> Submitted by: Matthew Keller, State University of New York College at Potsdam, Computing &amp; Technology Services
+</li><li> Freshened: April 20, 2006, Matthew Keller
+</li></ul>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Securing_Linux_in_a_Nutshell.html#Preface"><span class="tocnumber">1</span> <span class="toctext">Preface</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Securing_Linux_in_a_Nutshell.html#Netstat_-a_is_your_Friend"><span class="tocnumber">2</span> <span class="toctext">Netstat -a is your Friend</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="Securing_Linux_in_a_Nutshell.html#The_xinetd.2Finetd_listeners"><span class="tocnumber">3</span> <span class="toctext">The xinetd/inetd listeners</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="Securing_Linux_in_a_Nutshell.html#inetd"><span class="tocnumber">3.1</span> <span class="toctext">inetd</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="Securing_Linux_in_a_Nutshell.html#xinetd"><span class="tocnumber">3.2</span> <span class="toctext">xinetd</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="Securing_Linux_in_a_Nutshell.html#The_Run-level_Services"><span class="tocnumber">4</span> <span class="toctext">The Run-level Services</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="Securing_Linux_in_a_Nutshell.html#Routine_Security_Maintenance"><span class="tocnumber">5</span> <span class="toctext">Routine Security Maintenance</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Preface">Preface</span></h3>
+<p>Quite simply, there is no such thing as a secure, networked computer. This document will talk about how to remove common security problems from "out-of-the-box" Linux installations. I will be focusing on RedHat/Fedora-based systems. The concepts are applicable to any Linux installation.
+</p><p>This document is being geared towards EZproxy Admins who want a "black box" EZproxy server. This document will assume that you're not trying to do anything other than EZproxy with the physical server (and perhaps a web server like Apache to provide you web administration capabilities).
+</p><p>I also have to disclaim any responsibility from the use or misuse of this document. If you delete the wrong file - even if I told you too - Don't blame me, my employer, or anyone I know. (You're welcome to blame the U.S. President however. I didn't vote for him so most things are his fault anyhow.&#160;;) I will do my best to correct any errors reported to me, and have done my best to ensure accuracy - as of the time of this writing - of all information presented here. YMMV. Contributions welcome.
+</p>
+<h3> <span class="mw-headline" id="Netstat_-a_is_your_Friend">Netstat -a is your Friend</span></h3>
+<p>Go ahead. As root, type in netstat -a. If it scrolls off the screen, you can add a |more to the end of it. This shows you every open network and UNIX domain socket on this computer. We aren't concerned with UNIX domain sockets (the lower parts of that report) as they are only accessible to users/software running ON the computer (and we're here to PREVENT that). The upper part, however, will list of the open TCP and UDP sockets. In short, you want to make this list as short as possible because every open UDP port, and every TCP port in a LISTEN state, is a potential point of entry for an intruder.
+</p><p>Use this command liberally throughout this process to see what is changing. If you want, you can pipe the output to a file for more comparison (netstat -a &gt; filename).
+</p><p>A word of caution: It's best to do the netstat checking with EZproxy OFF. The way EZproxy is designed, it will have 1 TCP port in the LISTEN state for every entry in your EZproxy.cfg file. This will create a bit of confusion because you won't be sure WHAT has a port open- Whether it's EZproxy or some yet-to-be-disabled service.
+</p>
+<h3> <span class="mw-headline" id="The_xinetd.2Finetd_listeners">The xinetd/inetd listeners</span></h3>
+<p>Determining Which System You're Running
+If you're running pre-7.0 versions of RedHat, or if there exists an /etc/inetd.conf file, then you're running most likely running inetd. If there is an /etc/xinetd.d directory, then you're most likely running xinetd.
+</p>
+<h4> <span class="mw-headline" id="inetd">inetd</span></h4>
+<p>Edit the /etc/inetd.conf file. You can pretty safely comment out (place a pound-sign (#) at the beginning of the line) everything in this file. You may want to leave 'telnet' open, if that is your desired method of remote administration. You'll also notice 'ftp' is controlled out of here. I highly recommend against leaving FTP active on an EZproxy server- There is no need for it and is frequently a source of exploitable bugs. In short, if you don't know what it is, or you don't know you use it- Turn it off.
+</p><p>After you're done you'll need to tell inetd to re-read the config file. This is most easily accomplished by telling the running process to "HUP". Find out the ID of the inetd process (ps auxc|grep inetd) and then send it the HUP signal (kill -HUP pid).
+</p>
+<h4> <span class="mw-headline" id="xinetd">xinetd</span></h4>
+<p>To edit xinetd entries, you have to work a little more. Change your current directory into /etc/xinetd.d and do an ls. This is a list of all the services xinetd is listening for. You have two options: the easy/more permanent route, or the harder/more better route.
+</p><p>If you chose the easier way, you simply delete the files in the folder that correspond to services you don't want offered. Yup. Just rm -f to your heart's content (you may want to leave telnet or ssh if those are your methods of remote access).
+</p><p>The "harder" way is to edit the files corresponding to the services you want to disable, and add a "disable = yes" line somewhere applicable (between the curly braces configuring the service).
+</p><p>Regardless of which method you choose, you will need to stop and start xinetd (it doesn't as of this writing support the HUP signal). This is most likely done by /etc/rc.d/init.d/xinetd stop followed by a /etc/rc.d/init.d/xinetd start but your mileage may vary depending on distribution. A reboot will always handle this.&#160;:-D
+</p>
+<h3> <span class="mw-headline" id="The_Run-level_Services">The Run-level Services</span></h3>
+<p>Run-levels are one of the more confusing parts of Linux/UN*X systems. For our discussion, if you're running on a server that is launching XWindows at bootup, you'll use /etc/rc.d/rc5.d/ below. If you start up in "normal" console mode, you'll use /etc/rc.d/rc3.d/ as noted below. The difference is the number (5 vs. 3).
+</p><p>Change your current directory into your run-level folder and do an ls. This is a list of everything started or stopped at boot time (essentially). These files are named [S/K]XXname - For example I have S85ezproxy. What this means is "Start in slot 85 the ezproxy service". A "K" at the beginning means "stop" that service. The slot numbers are simply elementary ordering. A lower numbered service (say "network") gets started before a higher numbered service (say "EZproxy").
+</p><p>With that out of the way, ignore anything with a "K"- They just don't matter to us right now. Everything with an "S", however, should be thought about. In short, if you don't know what it is and don't know that you use it, delete it. You'll want to keep, for example, things like "network", "syslog", "crond", possibly "sshd" and *ALWAYS* keep "local".
+</p><p>After messing with your runlevels, I recommend you reboot. Stop EZproxy if it's running on startup, and do a netstat -a to see what's listening. You shouldn't have anything except telnet, ssh, or other things you conciously decided to run.
+</p>
+<h3> <span class="mw-headline" id="Routine_Security_Maintenance">Routine Security Maintenance</span></h3>
+<p>No networked computer is secure, especially one that hasn't been updated in more than a couple hours. Any networked services you're offering (INCLUDING EZproxy) should be routinely upgraded. You should be on any security bug mailing lists for those services so you find out about security problems and can take the necessary actions to upgrade/patch the service. It doesn't take long after an exploit hits Bugtraq or a number of other full-disclosure security lists, before malicious brats with too much spare time and no real talent are probing the Internet for exploitable services. As previously mentioned, if the service listens on your network or can be reached on your network, it is potentially exploitable.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 27/1000000
+Preprocessor generated node count: 32/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key ezpwikidb:pcache:idhash:1377-0!*!*!!en!*!* and timestamp 20150624200617 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Securing_Linux_in_a_Nutshell&amp;oldid=1934">https://pluto.potsdam.edu/ezproxywiki/index.php?title=Securing_Linux_in_a_Nutshell&amp;oldid=1934</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special:Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category:Documentation.html" title="Category:Documentation">Documentation</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Securing_Linux_in_a_Nutshell.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Talk:Securing_Linux_in_a_Nutshell&amp;action=edit&amp;redlink=1" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Securing_Linux_in_a_Nutshell&amp;action=edit" primary="1" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Securing_Linux_in_a_Nutshell&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-createaccount"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:UserLogin&amp;returnto=Securing+Linux+in+a+Nutshell&amp;type=signup">Create account</a></li>
+				<li id="pt-login"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:UserLogin&amp;returnto=Securing+Linux+in+a+Nutshell" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="Main_Page.html" style="background-image: url(https://pluto.potsdam.edu/var/www/html/common/dot_trans.gif);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="EZProxyWiki:Community_portal.html" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="EZProxyWiki:Current_events.html" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="Special:RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="Special:Random.html" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="Help:Contents.html" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="https://pluto.potsdam.edu/ezproxywiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search EZProxyWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special:WhatLinksHere/Securing_Linux_in_a_Nutshell.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special:RecentChangesLinked/Securing_Linux_in_a_Nutshell.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Securing_Linux_in_a_Nutshell&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+				<li id="t-permalink"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Securing_Linux_in_a_Nutshell&amp;oldid=1934" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Securing_Linux_in_a_Nutshell&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="https://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 30 March 2008, at 20:05.</li>
+		<li id="viewcount">This page has been accessed 4,993 times.</li>
+		<li id="privacy"><a href="EZProxyWiki:Privacy_policy.html" title="EZProxyWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="EZProxyWiki:About.html" title="EZProxyWiki:About">About EZProxyWiki</a></li>
+		<li id="disclaimer"><a href="EZProxyWiki:General_disclaimer.html" title="EZProxyWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<!-- Served in 0.211 secs. --></body></html>

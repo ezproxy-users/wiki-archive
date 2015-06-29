@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Config.txt - EZProxyWiki</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.0rc5" />
+<link rel="shortcut icon" href="https://pluto.potsdam.edu/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://pluto.potsdam.edu/ezproxywiki/opensearch_desc.php" title="EZProxyWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://pluto.potsdam.edu/ezproxywiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="EZProxyWiki Atom feed" href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="../load.php%3Fdebug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%252Cshared%257Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*.css" />
+<!--[if IE 6]><link rel="stylesheet" href="/ezproxywiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/ezproxywiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: ezpwikidb:resourceloader:filter:minify-css:7:bd176711d87effdb3a6ff09c19734297 */</style>
+
+<script src="../load.php%3Fdebug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Config.txt","wgTitle":"Config.txt","wgCurRevisionId":5648,"wgArticleId":1372,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Documentation"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Config.txt","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: ezpwikidb:resourceloader:filter:minify-js:7:a02a7fa766593347c4dbb130a7c3803e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Config_txt skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Config.txt</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From EZProxyWiki</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="Config.txt.html#column-one">navigation</a>, <a href="Config.txt.html#searchInput">search</a></div>
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Config.txt is the EZproxy configuration file. It contains general settings plus database definitions for the web resources to be proxied.
+</p><p>The file has been named <i>config.txt</i> since EZproxy 5.1a (2008-08-25). Prior to that it was named <i>ezproxy.cfg</i>.
+</p><p>The following directives are used in the config.txt file.  Either the entire directive or the abbreviated form may be used; abbreviated forms are in parenthesis.
+</p><p>Within the config file you may preface a line with "#" to insert comments that will be ignored by EZproxy.
+</p><p>EZproxy must be restarted for changes to config.txt to take effect.
+</p><p>Official OCLC documentation is at <a rel="nofollow" class="external text" href="http://www.oclc.org/support/services/ezproxy/documentation/cfg.en.html">Configuration File config.txt/ezproxy.cfg</a>. Many directives (but not all, as at June 2010) are documented in the draft <a rel="nofollow" class="external text" href="http://www.oclc.org/support/documentation/ezproxy/pdf/ezproxy_referencemanual.pdf">Reference Manual</a>.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Config.txt.html#General_Settings"><span class="tocnumber">1</span> <span class="toctext">General Settings</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="Config.txt.html#.28N.29_Name_of_Server"><span class="tocnumber">1.1</span> <span class="toctext">(N) Name of Server</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="Config.txt.html#.28E.29_ExcludeIP"><span class="tocnumber">1.2</span> <span class="toctext">(E) ExcludeIP</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="Config.txt.html#.28I.29_IncludeIP"><span class="tocnumber">1.3</span> <span class="toctext">(I) IncludeIP</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="Config.txt.html#.28A.29_AutoLoginIP"><span class="tocnumber">1.4</span> <span class="toctext">(A) AutoLoginIP</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="Config.txt.html#.28F.29_FIRSTPORT.2C_default_2048"><span class="tocnumber">1.5</span> <span class="toctext">(F) FIRSTPORT, default 2048</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="Config.txt.html#.28MC.29_MaxConcurrentTransfers.2C_default_200"><span class="tocnumber">1.6</span> <span class="toctext">(MC) MaxConcurrentTransfers, default 200</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="Config.txt.html#.28ML.29_MaxLifetime.2C_default_120"><span class="tocnumber">1.7</span> <span class="toctext">(ML) MaxLifetime, default 120</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="Config.txt.html#.28MS.29_MaxSessions.2C_default_500"><span class="tocnumber">1.8</span> <span class="toctext">(MS) MaxSessions, default 500</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="Config.txt.html#.28MV.29_MaxVirtualHosts.2C_default_200"><span class="tocnumber">1.9</span> <span class="toctext">(MV) MaxVirtualHosts, default 200</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="Config.txt.html#.28P.29_Proxy_Server"><span class="tocnumber">1.10</span> <span class="toctext">(P) Proxy Server</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="Config.txt.html#UsageLimit"><span class="tocnumber">1.11</span> <span class="toctext">UsageLimit</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="Config.txt.html#Database_definitions"><span class="tocnumber">2</span> <span class="toctext">Database definitions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="Config.txt.html#.28T.29_Title"><span class="tocnumber">2.1</span> <span class="toctext">(T) Title</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="Config.txt.html#.28U.29_URL"><span class="tocnumber">2.2</span> <span class="toctext">(U) URL</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="Config.txt.html#.28D.29_Domain"><span class="tocnumber">2.3</span> <span class="toctext">(D) Domain</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="Config.txt.html#Simple_example"><span class="tocnumber">2.4</span> <span class="toctext">Simple example</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="Config.txt.html#.28H.29_HOST"><span class="tocnumber">2.5</span> <span class="toctext">(H) HOST</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="Config.txt.html#.28HJ.29_HostJavaScript_and_.28DJ.29_DomainJavaScript"><span class="tocnumber">2.6</span> <span class="toctext">(HJ) HostJavaScript and (DJ) DomainJavaScript</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="Config.txt.html#Username.2Fpassword_authentication"><span class="tocnumber">3</span> <span class="toctext">Username/password authentication</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="Config.txt.html#.28V.29_Validate_.28HTTP_Basic_authentication.29"><span class="tocnumber">3.1</span> <span class="toctext">(V) Validate (HTTP Basic authentication)</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="Config.txt.html#FormVariable_and_URL_-Form_.28HTML_forms_for_login.29"><span class="tocnumber">3.2</span> <span class="toctext">FormVariable and URL -Form (HTML forms for login)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="Config.txt.html#Examples_for_specific_databases"><span class="tocnumber">4</span> <span class="toctext">Examples for specific databases</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="General_Settings">General Settings</span></h3>
+<p>By convention general settings are placed at the top of the file before the first Title line.  Most settings don't have to be at the top, but it is more convenient if they are.
+</p>
+<h4> <span class="mw-headline" id=".28N.29_Name_of_Server">(N) Name of Server</span></h4>
+<p>Name of the server where EZproxy resides  
+</p><p>e.g. "N lib5.lib.ou.edu" or "N libraries.ou.edu"
+</p><p>This is optional, and is not needed if DNS can properly detect the name of your server (using the command "ezproxy -c").  Abqjohn has omitted this directive on their server, because it simplifies copying configuration files between the production &amp; development servers (with this directive, they would have to remember to change it every time they copied the production configuration to the dev server).
+</p>
+<h4> <span class="mw-headline" id=".28E.29_ExcludeIP">(E) ExcludeIP </span></h4>
+<p>Exclude computers or IP address ranges from having to use EZproxy.  
+</p><p>e.g. "E 129.15.1.0 - 129.15.255.255" excludes anyone on OU's campus from having to use EZproxy
+</p><p>Can appear multiple times within ezproxy.cfg - with the settings taking effect on the next 'T' line.
+</p>
+<h4> <span class="mw-headline" id=".28I.29_IncludeIP">(I) IncludeIP </span></h4>
+<p>Include computer or IP address previously excluded to force that computer to use proxy.
+</p><p>e.g. "I 129.15.70.30" forces that computer (currently proxy server) to use EZproxy.  This allows us to use a proxy to test off campus access.
+</p><p>Can appear multiple times within ezproxy.cfg - with the settings taking effect on the next 'T' line.
+</p>
+<h4> <span class="mw-headline" id=".28A.29_AutoLoginIP">(A) AutoLoginIP</span></h4>
+<p>Allow access to this resource without the user having to be authenticated. This allows us to have databases to which we want to provide access through EZproxy but do not want to make the user authenticate from certain IP addresses.
+</p><p>e.g. "A 129.15.70.30" Allows access to the resource through EZproxy from this IP without any user authentication.
+</p><p>Can appear multiple times within ezproxy.cfg - with the settings taking effect on the next 'T' line.
+</p><p>See also <a rel="nofollow" class="external free" href="http://oclc.org/support/services/ezproxy/documentation/cfg/autologinip.en.html">http://oclc.org/support/services/ezproxy/documentation/cfg/autologinip.en.html</a>
+</p>
+<h4> <span class="mw-headline" id=".28F.29_FIRSTPORT.2C_default_2048">(F) FIRSTPORT, default 2048</span></h4>
+<p>Sets the first port used by EZproxy.  The ports used will be from X to Y, where X is FIRSTPORT and Y = X + MAXVIRTUALHOSTS
+</p>
+<h4> <span class="mw-headline" id=".28MC.29_MaxConcurrentTransfers.2C_default_200">(MC) MaxConcurrentTransfers, default 200</span></h4>
+<p>MAXCONCURRENTTRANSFERS determines how many HTTP transfers can be in progress concurrently. Most web browsers are configured to attempt four simultaneous HTTP transfers so that they can load web pages and graphics at the same time. The default value of 200 allows for 50 people to concurrently downloading 4 files each without reaching this limit.
+</p>
+<h4> <span class="mw-headline" id=".28ML.29_MaxLifetime.2C_default_120">(ML) MaxLifetime, default 120</span></h4>
+<p>MAXLIFETIME determines how long in minutes an EZproxy session should remain valid after the last time it is accessed. The default of 120 determines that a session remains valid until 2 hours after the last time the user accesses a database through EZproxy. MAXLIFETIME is the only setting that is position dependent in ezproxy.cfg. In normal use, it should appear before the first TITLE line.
+</p>
+<h4> <span class="mw-headline" id=".28MS.29_MaxSessions.2C_default_500">(MS) MaxSessions, default 500</span></h4>
+<p>MAXSESSIONS determines the maximum number of EZproxy sessions that can exists concurrently. A user's session is created during login and ends after MAXLIFETIME minutes of inactivity (default 2 hours) have occurred or when the user accesses a URL like "http://ezproxy.yourlib.org:2048/logout" to explicitly logout.
+</p>
+<h4> <span class="mw-headline" id=".28MV.29_MaxVirtualHosts.2C_default_200">(MV) MaxVirtualHosts, default 200</span></h4>
+<p>MAXVIRTUALHOSTS determines the maximum number of virtual web servers that EZproxy can create. A virtual web server represents a single host name/port combination. For example, if EZproxy assigns port 2050 to www.somedb.com, 2051 to www.somedb.com:180, and 2052 to www.otherdb.com, these three ports represent three virtual hosts. In normal use, increase this parameter by no more than 50 - 100 each time, as it provides a safe guard against configuration errors in ezproxy.cfg that might lead to the creation of excessive, unneeded virtual hosts.  2048-2248 is the default port range used by EZproxy with the default MV value of 200; if ezproxy.cfg is edited to say: MV 300 (which would allow 300 ports instead of 200, the new port ranges would be 2048 - 2348.
+</p>
+<h4> <span class="mw-headline" id=".28P.29_Proxy_Server">(P) Proxy Server</span></h4>
+<p>Specifies the proxy server and port number (proxy:port) that EZproxy must run through to gain access to external resources.
+</p><p>e.g. "P proxy.yourlib.org:8000" - Specifies to use the proxy server 'proxy.yourlib.org' on port 8000
+</p>
+<h4> <span class="mw-headline" id="UsageLimit"> UsageLimit </span></h4>
+<p>See <a href="UsageLimit.html" title="UsageLimit">UsageLimit</a>.
+</p>
+<h3> <span class="mw-headline" id="Database_definitions">Database definitions</span></h3>
+<h4> <span class="mw-headline" id=".28T.29_Title">(T) Title</span></h4>
+<p>The TITLE line usually must appear first. There are a few exceptions, such as where it is preceded by the line:
+</p>
+<pre>
+Option DomainCookieOnly
+</pre>
+<p>TITLE must be followed by a textual description of the database. The description entered here appears in the default menu page.
+</p>
+<h4> <span class="mw-headline" id=".28U.29_URL">(U) URL </span></h4>
+<p>The URL line appears after the TITLE line. URL must be followed by the URL that is normally used to access this database. EZproxy automatically treats the host name in this URL as though it appears on its own HOST line in the current database configuration. This URL is used when generating the default menu page.
+</p>
+<h4> <span class="mw-headline" id=".28D.29_Domain">(D) Domain </span></h4>
+<p>DOMAIN lines appear after the URL line.  A DOMAIN line indicates that any URL containing a host name that matches the DOMAIN line, or ends in the contents of the DOMAIN line, should be proxied.  A typical database definition will contain one DOMAIN line, containing the last parts of the host name from the URL. For example, if http://www.somedb.com is the URL, then "DOMAIN somedb.com" would be the typical DOMAIN line.
+</p><p>If an asterisk is included, eg, "DOMAIN *.somedb.com", then somedb.com itself will not be proxied, only its subdomains.
+</p>
+<h4> <span class="mw-headline" id="Simple_example">Simple example</span></h4>
+<p>A simple entry for a new website to proxy would be:
+</p>
+<pre>
+T My Database Name
+U http://www.somedb.com/db1
+D somedb.com
+</pre>
+<h4> <span class="mw-headline" id=".28H.29_HOST">(H) HOST</span></h4>
+<p>HOST lines appear after the URL line. A HOST line indicates that any URL containing the specified host name should be proxied by EZproxy.  There are only certain times when a HOST line needs to be specified.  Here is one example:
+</p><p>A problem arises with the typical example above if "somedb.com" introduces another new URL such as http://find.somedb.com/. Technically, the host name find.somedb.com matches against "DOMAIN somedb.com" but if you try to use the starting point URL
+</p><p>http://ezproxy.yourlib.org:2048/login?url=http://find.somedb.com/
+</p><p>EZproxy will generate an error indicating that you must add this line to ezproxy.cfg:
+</p><p>HOST find.somedb.com
+</p><p>There can only be one URL line per database definition, and that URL line creates an implicit HOST line for the host name in that URL. If you use other host names in starting point URLs provided by the same vendor, you must pre-authorize those other host names with a HOST line. This requirement that the host name in a starting point URL must match the host name in the URL line or a HOST line is a security precaution.
+</p><p>If the protocol name (eg, http) is omitted (which it commonly is), EZproxy assumes it is http. If the host should be proxied using https, it must be included, eg:
+</p><p>HOST https://find.somedb.com
+</p>
+<h4> <span class="mw-headline" id=".28HJ.29_HostJavaScript_and_.28DJ.29_DomainJavaScript">(HJ) HostJavaScript and (DJ) DomainJavaScript </span></h4>
+<p>The "J" variants of HOST and DOMAIN act the same as the "non-J" variants, except that EZproxy looks for URLs within JavaScript and rewrites them. With the "non-J" directives, EZproxy only rewrites URLs found in tags like &lt;A HREF=...&gt;.
+</p><p>Note: When EZproxy matches a host name up against ezproxy.cfg, the first database definition that matches defines the behavior for hosts. So if there was a simple "D somedb.com" earlier in the file than "DJ somedb.com", this would result in EZproxy not performing JavaScript processing on host names ending in somedb.com.
+</p>
+<h3> <span class="mw-headline" id="Username.2Fpassword_authentication">Username/password authentication</span></h3>
+<h4> <span class="mw-headline" id=".28V.29_Validate_.28HTTP_Basic_authentication.29">(V) Validate (HTTP Basic authentication)</span></h4>
+<p>The Validate line contains the username &amp; password required by a remote web site which uses HTTP Basic browser authentication. In HTTP Basic authentication, the remote web server sends an HTTP status code of 401 causing the browser to present a small login window.  The Validate line should be between the Title and URL lines, e.g.
+</p>
+<pre>
+T Chronicle of Higher Education
+V me:secret
+U http://chronicle.com/daily
+</pre>
+<p>This sends the user name 'me' and the password 'secret' (examples only) in the initial request to the remote server, avoiding the appearance of the login window and avoiding the need for users to be aware of the password.
+</p>
+<h4> <span class="mw-headline" id="FormVariable_and_URL_-Form_.28HTML_forms_for_login.29">FormVariable and URL -Form (HTML forms for login)</span></h4>
+<p>This approach submits a username and password to sites that require password authentication via an HTML form in a web page (unlike the HTTP Basic authentication approach). Employing this type of database definition requires a bit of HTML knowledge.
+</p><p>The username and password are not secure, although they are not usually obvious to the user. This is a method for automating login, not a security feature.
+</p><p>You'll need to view the login page source of the site you are configuring to get the following bits of information:
+</p><p>(1) the URL of the page that the form is actually processed by and the method it uses (get or post)
+&lt;form action="theForUrl/here.htm" method="get|post"&gt;
+</p><p>(2) determine the necessary form variable keys you must pass to that form - this can be a bit of trial and error. You can just pass every single input, hidden or otherwise, but it's generally easier to start with what seems like the minimum and then add other variables as needed. Minimally, this would be a set like:
+&lt;input name="somethinglikelogin"&gt;
+&lt;input name="somethinglikepassword"&gt;
+</p><p>Finally, you'll write up your database definition using this information, that will (minimally) be something like:
+</p>
+<pre>Title Old School Database<br />
+URL -Form=post osdb http://www.someDB.com/theForUrl/here.htm <br />
+FormVariable somethinglikelogin=yoursecretlogin<br />
+FormVariable somethinglikepassword=yoursecretpassword<br />
+</pre>
+<p>And you'll link to the database using the format:
+</p><p>
+http://ezproxy.yourlib.edu/login/osdb
+
+</p><p>For an example, see the <a href="JAMA.html" title="JAMA">JAMA</a> configuration.
+</p>
+<h2> <span class="mw-headline" id="Examples_for_specific_databases">Examples for specific databases</span></h2>
+<p>See <a href="Example_Configurations.html" title="Example Configurations" class="mw-redirect">Example Configurations</a>.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 187/1000000
+Preprocessor generated node count: 308/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key ezpwikidb:pcache:idhash:1372-0!*!0!!en!*!* and timestamp 20150624052822 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Config.txt&amp;oldid=5648">https://pluto.potsdam.edu/ezproxywiki/index.php?title=Config.txt&amp;oldid=5648</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special:Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category:Documentation.html" title="Category:Documentation">Documentation</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Config.txt.html" primary="1" context="subject" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk"><a href="Talk:Config.txt.html" primary="1" context="talk" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Config.txt&amp;action=edit" primary="1" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Config.txt&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-createaccount"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:UserLogin&amp;returnto=Config.txt&amp;type=signup">Create account</a></li>
+				<li id="pt-login"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Special:UserLogin&amp;returnto=Config.txt" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="Main_Page.html" style="background-image: url(https://pluto.potsdam.edu/var/www/html/common/dot_trans.gif);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="EZProxyWiki:Community_portal.html" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="EZProxyWiki:Current_events.html" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="Special:RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="Special:Random.html" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="Help:Contents.html" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="https://pluto.potsdam.edu/ezproxywiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" title="Search EZProxyWiki [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Toolbox</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Special:WhatLinksHere/Config.txt.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="Special:RecentChangesLinked/Config.txt.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Config.txt&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+				<li id="t-permalink"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Config.txt&amp;oldid=5648" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="https://pluto.potsdam.edu/ezproxywiki/index.php?title=Config.txt&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-poweredbyico">
+		<a href="https://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 15 February 2015, at 22:48.</li>
+		<li id="viewcount">This page has been accessed 92,638 times.</li>
+		<li id="privacy"><a href="EZProxyWiki:Privacy_policy.html" title="EZProxyWiki:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="EZProxyWiki:About.html" title="EZProxyWiki:About">About EZProxyWiki</a></li>
+		<li id="disclaimer"><a href="EZProxyWiki:General_disclaimer.html" title="EZProxyWiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi"], null, true);
+}</script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<!-- Served in 0.194 secs. --></body></html>
